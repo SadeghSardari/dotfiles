@@ -1,4 +1,4 @@
-exec >/tmp/startx.log 2>&1
+exec > ~/tmp/startx.log 2>&1
 
 # X.org Resize and Rotate
 xrandr --auto
@@ -13,6 +13,8 @@ xset fp rehash &
 # keyboard layout
 # see https://wiki.archlinux.org/index.php/X_keyboard_extension
 # see /usr/share/X11/xkb/rules/*.lst for more options
-setxkbmap -option ctrl:nocaps
+setxkbmap -model thinkpad -layout us -option ctrl:nocaps
 
-exec dwm 2> /tmp/dwm.log
+xbindkeys
+
+exec dwm 2> ~/tmp/dwm.log

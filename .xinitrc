@@ -1,7 +1,9 @@
 exec > ~/tmp/startx.log 2>&1
 
-# X.org Resize and Rotate
+# X.org Resize and Rotate: libglvnd support for mesa
+xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
+xrandr --dpi 210/LVDS
 
 # suckless status monitor
 slstatus &

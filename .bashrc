@@ -21,6 +21,7 @@ alias gcmsg='git commit -m'
 alias gp='git push'
 alias gpl='git pull'
 
+alias x='startx'
 alias xbl='xbacklight -get'
 
 PS1='[\u@\h \W]\$ '

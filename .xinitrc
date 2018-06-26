@@ -17,6 +17,9 @@ xset fp rehash &
 # see /usr/share/X11/xkb/rules/*.lst for more options
 setxkbmap -model thinkpad -layout us -option ctrl:nocaps
 
+# start redshift
+pgrep redshift &> /dev/null || redshift &> /dev/null &
+
 xbindkeys
 
 exec dwm 2> ~/tmp/dwm.log

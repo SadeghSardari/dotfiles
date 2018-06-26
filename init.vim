@@ -15,7 +15,6 @@ Plug 'ruby-formatter/rufo-vim'
 Plug 'gabrielelana/vim-markdown'
 Plug 'honza/vim-snippets'
 Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
-Plug 'roxma/nvim-completion-manager'
 call plug#end()
 
 let g:vim_jsx_pretty_colorful_config = 1
@@ -61,7 +60,8 @@ set completeopt+=noinsert
 set completeopt+=noselect
 
 " Path to python interpreter for neovim
-let g:python3_host_prog  = '/usr/local/bin/python3'
+let g:python3_host_prog  = '/usr/bin/python'
+let g:python_host_prog = '/usr/bin/python2'
 " Skip the check of neovim module
 let g:python3_host_skip_check = 1
 " Run deoplete.nvim automatically

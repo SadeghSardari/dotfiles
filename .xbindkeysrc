@@ -24,3 +24,7 @@
 	m:0x0 + c:233
 	XF86MonBrightnessUp
 
+# Bind PrtSc to clipmenu
+"clipmenu"
+	m:0x0 + c:107
+

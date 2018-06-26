@@ -23,6 +23,4 @@ alias gpl='git pull'
 
 alias xbl='xbacklight -get'
 
-alias chr='chromium --force-device-scale-factor=1.5'
-
 PS1='[\u@\h \W]\$ '

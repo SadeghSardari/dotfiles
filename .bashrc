@@ -9,7 +9,7 @@ alias ls='ls --color=auto'
 alias ll='ls -alH'
 
 alias sb='source ~/.bashrc'
-alias eb='vim ~/.bashrc'
+alias eb='nvim ~/.bashrc'
 
 alias tn='tmux new'
 alias tls='tmux ls'
@@ -23,5 +23,9 @@ alias gpl='git pull'
 
 alias x='startx'
 alias xbl='xbacklight -get'
+
+recwc() {
+  ffmpeg -f v4l2 -video_size 640x480 -i /dev/video0 -f alsa -i default -c:v libx264 -preset ultrafast -c:a aac $1
+}
 
 PS1='[\u@\h \W]\$ '

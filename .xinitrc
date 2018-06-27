@@ -18,8 +18,15 @@ xset fp rehash &
 setxkbmap -model thinkpad -layout us -option ctrl:nocaps
 
 # start redshift
-pgrep redshift &> /dev/null || redshift &> /dev/null &
+pgrep redshift -t 4500K:3500K &> /dev/null || redshift -t 4500K:3500K &> /dev/null &
 
 xbindkeys
+
+# set trackpoint acceleration to maximum
+xinput set-float-prop 16 318 1
+
+# set trackpad speed and enable tapping
+xinput -set-float-prop 15 318 0.6
+xinput -set-int-prop 15 327 8 1
 
 exec dwm 2> ~/tmp/dwm.log

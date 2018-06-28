@@ -30,6 +30,6 @@ recwc() {
   ffmpeg -f v4l2 -video_size 640x480 -i /dev/video0 -f alsa -i default -c:v libx264 -preset ultrafast -c:a aac $1
 }
 
-[[ $TMUX != "" ]] && export TERM="tmux-256color"
+[[ $TMUX != "" ]] && export TERM="screen-256color"
 
 PS1='[\u@\h \W]\$ '

@@ -14,19 +14,12 @@ xset fp rehash &
 
 # keyboard layout
 # see https://wiki.archlinux.org/index.php/X_keyboard_extension
-# see /usr/share/X11/xkb/rules/*.lst for more options
+# and /usr/share/X11/xkb/rules/*.lst for more options
 setxkbmap -model thinkpad -layout us -option ctrl:nocaps
 
 # start redshift
 pgrep redshift -t 4500K:3500K &> /dev/null || redshift -t 4500K:3500K &> /dev/null &
 
 xbindkeys
-
-# set trackpoint acceleration to maximum
-xinput set-float-prop 16 318 1
-
-# set trackpad speed and enable tapping
-xinput -set-float-prop 15 318 0.6
-xinput -set-int-prop 15 327 8 1
 
 exec dwm 2> ~/tmp/dwm.log

@@ -20,9 +20,12 @@ alias gdc='git diff --cached'
 alias gcmsg='git commit -m'
 alias gp='git push'
 alias gpl='git pull'
+alias gb='git branch'
+alias glsr='git ls-remote'
 
 alias x='startx'
 alias xbl='xbacklight -get'
+alias v='nvim .'
 
 alias dcm='clipdel -d .*'
 
@@ -33,3 +36,5 @@ recwc() {
 [[ $TMUX != "" ]] && export TERM="screen-256color"
 
 PS1='[\u@\h \W]\$ '
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

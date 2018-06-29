@@ -26,8 +26,14 @@ alias glsr='git ls-remote'
 alias x='startx'
 alias xbl='xbacklight -get'
 alias v='nvim .'
+alias fa='ps aux | fzf'
+alias fe='env | fzf'
 
 alias dcm='clipdel -d .*'
+
+alias mcv='sudo mount -t davfs http://localhost:42427/Lw482rJETHHL/V_Clairvision /mnt/clairvision -o username=${USER},rw,uid=${USER},gid=${USER},file_mode=700,dir_mode=700'
+
+alias mid='sudo mount -t davfs http://localhost:42427/5juTtQFmT28e/V_Identity /mnt/identity -o username=${USER},rw,uid=${USER},gid=${USER},file_mode=700,dir_mode=700'
 
 recwc() {
   ffmpeg -f v4l2 -video_size 640x480 -i /dev/video0 -f alsa -i default -c:v libx264 -preset ultrafast -c:a aac $1

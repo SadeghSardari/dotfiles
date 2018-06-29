@@ -28,3 +28,8 @@
 "clipmenu"
 	m:0x0 + c:107
 
+# Screenshot with imagemagick
+"import -window root ~/Desktop/screenshot-`date +%F-%T`.jpg"
+    	m:0x4 + c:198
+    	Control + XF86AudioMicMute
+

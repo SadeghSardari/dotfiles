@@ -28,6 +28,7 @@ alias xbl='xbacklight -get'
 alias v='nvim .'
 alias fa='ps aux | fzf'
 alias fe='env | fzf'
+alias ..='cd ..'
 
 alias dcm='clipdel -d .*'
 

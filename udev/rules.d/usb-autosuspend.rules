@@ -1,0 +1,6 @@
+# blacklist for usb autosuspend
+# SteelSeries mouse
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="1038", ATTR{idProduct}=="1369", GOTO="power_usb_rules_end"
+ACTION=="add", SUBSYSTEM=="usb", TEST=="power/control", ATTR{power/control}="auto"
+LABEL="power_usb_rules_end"
+

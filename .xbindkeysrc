@@ -1,18 +1,27 @@
 # Volume buttons control sound using pulse audio ctl
-# Mute volume
+
+# Toggle volume mute
+# "amixer set Master toggle"
 "pactl set-sink-mute @DEFAULT_SINK@ toggle"
 	m:0x0 + c:121
 	XF86AudioMute
 
 # Decrease volume
+# "amixer set Master 5%-"
 "pactl set-sink-volume @DEFAULT_SINK@ -2000"
-	m:0x0 + c:122
-	XF86AudioLowerVolume
+ 	m:0x0 + c:122
+ 	XF86AudioLowerVolume
 
 # Increase volume
+# "amixer set Master 5%+"
 "pactl set-sink-volume @DEFAULT_SINK@ +2000"
-	m:0x0 + c:123
+ 	m:0x0 + c:123
 	XF86AudioRaiseVolume
+
+# # Toggle microphone mute
+"pactl set-source-mute 1 toggle"
+     	m:0x0 + c:198
+     	XF86AudioMicMute
 
 # Decrease brightness
 "xbacklight -dec 10"
@@ -30,6 +39,6 @@
 
 # Screenshot with imagemagick, Alt-4
 "import -window root ~/Desktop/screenshot-`date +%F-%T`.jpg"
-    m:0x8 + c:13
-    Alt + 4
+    	m:0x8 + c:13
+    	Alt + 4
 

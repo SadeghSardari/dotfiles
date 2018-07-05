@@ -26,4 +26,7 @@ xbindkeys
 # start dropbox
 /usr/bin/dropbox &
 
+# set background image
+feh --bg-scale ~/Dropbox/Images/transcriber_vs_bg.jpg
+
 exec dwm 2> ~/tmp/dwm.log

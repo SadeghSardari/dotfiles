@@ -61,17 +61,18 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ ipv4, 	"W %s", 	"wlp4s0" },
-	{ ipv4, 	" E %s", 	"lo" },
-	{ cpu_perc, 	"%3s ", 	NULL},
-	{ cpu_freq, 	"%3s ", 	NULL},
-	{ ram_used, 	"%s ",  	NULL },
+	{ cpu_perc, 	"C%3s%% ",   	NULL},
+	{ ram_perc, 	"R%3s%% ",  	NULL },
+	{ ipv4, 	"W%s ", 	"wlp4s0" },
+        { netspeed_rx,  "D%4s ",         "wlp4s0" },
+        { netspeed_tx,  "U%4s ",         "wlp4s0" },
+	{ ipv4, 	"E%s ", 	"enp0s31f6" },
 	{ battery_perc, "[0:%s",	"BAT0" },
 	{ battery_state, "%s] ", 	"BAT0" },
 	{ battery_perc, "[1:%s",	"BAT1" },
 	{ battery_state, "%s] ", 	"BAT1" },
-	{ wifi_perc,	"%2s",		"wlp4s0" },
-	{ wifi_essid, 	"%4s ",		"wlp4s0" },
-	{ run_command, 	"V %s", 	"pamixer --get-volume" },
-	{ datetime, 	" %s",		"%c" },
+	{ wifi_essid, 	"%4s:",		"wlp4s0" },
+	{ wifi_perc,	"%2s ",		"wlp4s0" },
+	{ run_command, 	"V%s ",	        "pamixer --get-volume" },
+	{ datetime, 	"%s",		"%c" },
 };

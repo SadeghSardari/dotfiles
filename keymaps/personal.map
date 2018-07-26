@@ -63,10 +63,10 @@ string F31 = "pactl set-sink-volume @DEFAULT_SINK@ -2000\n"
 keycode 115 = F32
 string F32 = "pactl set-sink-volume @DEFAULT_SINK@ +2000\n"
 
-keycode  224 = F34
-string 	 F34 = "xbacklight -dec 5\n"
+#keycode  224 = F34
+#string 	 F34 = "xbacklight -dec 5\n"
 
-keycode  225 = F35
-string 	 F35 = "xbacklight -inc 5\n"
+#keycode  225 = F35
+#string 	 F35 = "xbacklight -inc 5\n"
 
 

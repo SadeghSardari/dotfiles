@@ -110,7 +110,7 @@ autocmd Filetype go command! -bang AS call go#alternate#Switch(<bang>0, 'split')
 autocmd Filetype go command! -bang AT call go#alternate#Switch(<bang>0, 'tabe')
 
 " Ctrl-P previews markdown in Chrome
-autocmd Filetype markdown nmap <c-p> :!open % -a Google\ Chrome.app<cr>
+autocmd Filetype markdown nmap <c-p> :!chromium %<cr>
 
 " syntax highlighting for js
 let g:javascript_plugin_jsdoc = 1

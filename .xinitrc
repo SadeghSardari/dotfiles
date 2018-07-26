@@ -18,7 +18,7 @@ xset fp rehash &
 setxkbmap -model thinkpad -layout us -option ctrl:nocaps
 
 # start redshift
-pgrep redshift -t 4500K:3500K &> /dev/null || redshift -t 4500K:3500K &> /dev/null &
+pgrep redshift -l 39.47:119.79 -t 4500K:3500K &> /dev/null || redshift -l 39.47:119.79 -t 4500K:3500K &> /dev/null &
 
 # load keyboard bindings
 xbindkeys

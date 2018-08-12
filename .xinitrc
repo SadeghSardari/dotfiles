@@ -12,6 +12,9 @@ slstatus &
 xset +fp /usr/share/fonts/misc &
 xset fp rehash &
 
+# keyboard rate
+xset r rate 200 40
+
 # keyboard layout
 # see https://wiki.archlinux.org/index.php/X_keyboard_extension
 # and /usr/share/X11/xkb/rules/*.lst for more options

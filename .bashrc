@@ -31,7 +31,6 @@ alias fe='env | fzf'
 alias ..='cd ..'
 alias cs='nvim ~/Dropbox/cheatsheets/cheatsheet.txt'
 alias note='cd ~/Dropbox/Notes/; nvim .'
-alias skype='chromium --app=https://web.skype.com'
 alias feh='feh --auto-rotate'
 
 alias dcm='clipdel -d .*'
@@ -47,6 +46,15 @@ alias mjo='sudo mount -t davfs http://localhost:42427/lQlCNWjUTuTQ/V_Journal /mn
 # restart wifi
 alias rwf='sudo systemctl restart wpa_supplicant@wlp4s0'
 
+# node things
+alias yt='yarn test'
+alias ys='yarn start'
+
+# Ruby
+alias irb='/usr/bin/irb-2.4'
+alias ruby='usr/bin/ruby-2.4'
+alias gem='/usr/bin/gem-2.4'
+
 recwc() {
   ffmpeg -f v4l2 -video_size 640x480 -i /dev/video0 -f alsa -i default -c:v libx264 -preset ultrafast -c:a aac $1
 }
@@ -59,3 +67,7 @@ PS1='[\u@\h \W]\$ '
 
 # nvm
 source /usr/share/nvm/init-nvm.sh
+
+# go
+export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
+export FZF_DEFAULT_COMMAND='ag --nocolor --ignore node_modules -g .'

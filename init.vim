@@ -33,6 +33,7 @@ autocmd FileType javascript nnoremap <buffer> <leader>i :call LanguageClient_tex
 autocmd FileType javascript nnoremap <buffer> <leader>lr :call LanguageClient_textDocument_rename()<cr>
 " <leader>lf to fuzzy find the symbols in the current document
 autocmd FileType javascript nnoremap <buffer> <leader>lf :call LanguageClient_textDocument_documentSymbol()<cr>
+autocmd FileType javascript nnoremap <buffer> <leader>t :!yarn test %<cr>
 
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
@@ -131,7 +132,7 @@ nnoremap <leader>_ ddkkp
 nnoremap H ^
 nnoremap L $
 nnoremap <leader>b, f,a<cr><esc>==
-nnoremap <c-f> :FZF<cr>
+nnoremap <c-f> :Files<cr>
 nnoremap <c-g> :Ag<cr>
 nnoremap <leader>a ggVG
 nnoremap <leader><esc> :noh<cr>

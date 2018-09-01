@@ -13,7 +13,7 @@ xset +fp /usr/share/fonts/misc &
 xset fp rehash &
 
 # keyboard rate
-xset r rate 200 40
+xset r rate 400 35
 
 # keyboard layout
 # see https://wiki.archlinux.org/index.php/X_keyboard_extension

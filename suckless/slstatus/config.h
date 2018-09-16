@@ -74,5 +74,6 @@ static const struct arg args[] = {
 	{ wifi_essid, 	"%4s:",		"wlp4s0" },
 	{ wifi_perc,	"%2s ",		"wlp4s0" },
 	{ run_command, 	"V%s ",	        "pamixer --get-volume" },
+	{ run_command,  "B%s ",		"light -b" },
 	{ datetime, 	"%s",		"%c" },
 };

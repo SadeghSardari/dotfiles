@@ -36,6 +36,7 @@ alias feh='feh --auto-rotate'
 alias dcm='clipdel -d .*'
 alias dsk='cd ~/Desktop'
 alias dld='cd ~/Downloads'
+alias esc='nvim ~/.ssh/config'
 
 alias mcv='sudo mount -t davfs http://localhost:42427/d6oJctVLQ7ep/V_Clairvision /mnt/clairvision -o username=${USER},rw,uid=${USER},gid=${USER},file_mode=700,dir_mode=700'
 

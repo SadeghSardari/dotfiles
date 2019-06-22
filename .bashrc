@@ -14,6 +14,8 @@ alias eb='nvim ~/.bashrc'
 alias tn='tmux new'
 alias tls='tmux ls'
 
+alias grhh='git reset --hard HEAD'
+alias gl='git log'
 alias ga='git add'
 alias gst='git status'
 alias gdc='git diff --cached'
@@ -22,6 +24,7 @@ alias gp='git push'
 alias gpl='git pull'
 alias gb='git branch'
 alias glsr='git ls-remote'
+alias glo='git log --pretty=oneline'
 
 alias x='startx'
 alias xbl='xbacklight -get'
@@ -51,10 +54,7 @@ alias rwf='sudo systemctl restart wpa_supplicant@wlp4s0'
 alias yt='yarn test'
 alias ys='yarn start'
 
-# Ruby
-alias irb='/usr/bin/irb-2.4'
-alias ruby='usr/bin/ruby-2.4'
-alias gem='/usr/bin/gem-2.4'
+alias v='nvim .'
 
 recwc() {
   ffmpeg -f v4l2 -video_size 640x480 -i /dev/video0 -f alsa -i default -c:v libx264 -preset ultrafast -c:a aac $1
@@ -72,3 +72,10 @@ source /usr/share/nvm/init-nvm.sh
 # go
 export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 export FZF_DEFAULT_COMMAND='ag --nocolor --ignore node_modules -g .'
+
+# ruby
+export PATH=$PATH:$HOME/.gem/ruby/2.6.0/bin
+
+# dotnet
+export DOTNET_ROOT=$HOME/dotnet
+export PATH=$PATH:$HOME/dotnet

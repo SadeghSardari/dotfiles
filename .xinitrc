@@ -32,4 +32,8 @@ xbindkeys
 # set background image
 feh --bg-scale ~/Dropbox/Images/transcriber_vs_bg.jpg
 
+# for GTK3 HiDPI
+export GDK_SCALE=2
+
 exec dwm 2> ~/tmp/dwm.log
+
